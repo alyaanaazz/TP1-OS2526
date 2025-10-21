@@ -1,0 +1,17 @@
+
+Check Category         Item                           Status    Details
+----------------------------------------------------------------------------------------------------
+File Permissions      /etc/passwd                    PASS      Permissions 644 (ok)
+File Permissions      /etc/shadow                    PASS      Permissions 640 (ok)
+File Permissions      /etc/sudoers                   WARN      Permissions 440
+Services              root_process_count             INFO      Found 96 processes running as root
+Services              port_22                        PASS      Known service listening on port 22: sshd
+Services              port_42455                     WARN      Unknown service listening on port 42455: code-0f0d87fa9e
+Services              port_53                        PASS      Known service listening on port 53: systemd-resolve
+Services              port_68                        WARN      Unknown service listening on port 68: systemd-network
+Users                 no_password                    PASS      No accounts without password
+Users                 inactive_users                 PASS      No inactive users found
+Logs                  /var/log/auth.log              PASS      0 failed login attempts in last 24h
+Additional Checks     world_writable                 PASS      No world-writable files in system directories
+Additional Checks     ssh_protocol                   PASS      SSH Protocol is 2
+Additional Checks     ssh_empty_passwords            PASS      SSH does not permit empty passwords
